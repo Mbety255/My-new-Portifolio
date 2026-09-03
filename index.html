@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Faraja Mbeti — Software Developer &amp; IT Consultant | NexaFlow</title>
+<meta name="description" content="Faraja Mbeti — Mwanafunzi wa IT, Software Developer, na IT Consultant. Mwanzilishi wa NexaFlow Digital Services, Tanzania.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+
+<!-- ============ NAVBAR ============ -->
+<header class="navbar" id="navbar">
+  <div class="navbar__inner">
+    <a href="#home" class="navbar__logo">
+      <span class="navbar__logo-bracket">&lt;</span>Faraja<span class="navbar__logo-dot">.</span>dev<span class="navbar__logo-bracket">/&gt;</span>
+    </a>
+
+    <nav class="navbar__links" id="navLinks">
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#projects" class="nav-link">Projects</a>
+      <a href="#blog" class="nav-link">Blog</a>
+      <a href="#books" class="nav-link">Books</a>
+      <a href="#contact" class="nav-link nav-link--cta">Wasiliana</a>
+    </nav>
+
+    <button class="hamburger" id="hamburger" aria-label="Fungua menyu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <div class="hero__inner">
+    <div class="hero__text">
+      <p class="hero__eyebrow">NexaFlow Digital Services</p>
+      <h1 class="hero__title">Ninageuza matatizo ya kiteknolojia<br> kuwa <span class="hero__title-accent">suluhisho linalofanya kazi.</span></h1>
+      <p class="hero__desc">Mwanafunzi wa mwaka wa pili wa BSc. Information Technology, Software Developer, na IT Consultant kutoka Tanzania — nikijenga mifumo, tovuti, na huduma za kidijitali zinazolenga matatizo halisi ya jamii yetu.</p>
+      <div class="hero__actions">
+        <a href="#projects" class="btn btn--primary">Angalia Miradi Yangu</a>
+        <a href="#contact" class="btn btn--ghost">Nizungumze Nawe</a>
+      </div>
+    </div>
+
+    <div class="hero__terminal" aria-hidden="true">
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot terminal__dot--red"></span>
+          <span class="terminal__dot terminal__dot--yellow"></span>
+          <span class="terminal__dot terminal__dot--green"></span>
+          <span class="terminal__title">faraja@nexaflow: ~</span>
+        </div>
+        <div class="terminal__body">
+          <p><span class="terminal__prompt">$</span> whoami</p>
+          <p class="terminal__type" id="terminalType"></p>
+          <p class="terminal__cursor-line"><span class="terminal__prompt">$</span> <span class="terminal__cursor" id="terminalCursor">▌</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="hero__scroll-hint">
+    <span>Sogeza chini</span>
+    <div class="hero__scroll-line"></div>
+  </div>
+</section>
+
+<!-- ============ ABOUT ============ -->
+<section class="about" id="about">
+  <div class="section-inner about__inner">
+    <div class="about__image-wrap">
+      <div class="about__image-glow"></div>
+      <img
+        src="https://api.dicebear.com/7.x/personas/svg?seed=Faraja&backgroundColor=131B26"
+        alt="Picha ya Faraja Mbeti"
+        class="about__image">
+    </div>
+
+    <div class="about__content">
+      <p class="section-label">Kuhusu Mimi</p>
+      <h2 class="section-title">Msanidi programu anayeamini teknolojia inaweza kubadilisha maisha ya Watanzania.</h2>
+      <p class="about__paragraph">
+        Naitwa Faraja Mbeti. Kwa sasa ninasoma mwaka wa pili wa Bachelor of Science in Information Technology,
+        huku nikijenga NexaFlow Digital Services — kampuni ndogo ninayotoa huduma za nyaraka za serikali,
+        programu za elimu, na huduma mbalimbali za kidijitali kwa jamii ya Watanzania.
+      </p>
+      <p class="about__paragraph">
+        Nje ya darasa, muda wangu mwingi huenda kwenye kuandika code, kubuni mifumo inayotatua matatizo
+        ya kila siku — kutoka usafiri wa daladala hadi bei za mazao sokoni — na kufundisha wenzangu
+        stadi za kompyuta kwa lugha ya Kiswahili. Nina hamu kubwa ya kuona kizazi kijacho cha wataalamu wa IT
+        Afrika Mashariki kikijengwa na jamii yetu wenyewe.
+      </p>
+
+      <div class="about__stats">
+        <div class="stat">
+          <span class="stat__num">6+</span>
+          <span class="stat__label">Miradi Iliyokamilika</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">2</span>
+          <span class="stat__label">Vitabu Vilivyoandikwa</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">Y2</span>
+          <span class="stat__label">BSc. IT — Chuo Kikuu</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SERVICES ============ -->
+<section class="services" id="services">
+  <div class="section-inner">
+    <p class="section-label">Huduma</p>
+    <h2 class="section-title">Ninachokusaidia nacho</h2>
+    <p class="section-sub">Huduma za IT zenye viwango vya kitaalamu, kwa bei rafiki kwa wanafunzi, biashara ndogo, na taasisi.</p>
+
+    <div class="services__grid">
+
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 5h16v11H4z" stroke="currentColor" stroke-width="1.6"/><path d="M2 19h20M9 19l1-3h4l1 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="service-card__title">IT Support &amp; Technicians</h3>
+        <p class="service-card__desc">Ukarabati wa kompyuta, usanidi wa mifumo, na huduma za kiufundi kwa ofisi, shule, na watu binafsi.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 4v10m0 0-3-3m3 3 3-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 15v3a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+        </div>
+        <h3 class="service-card__title">Remote Support</h3>
+        <p class="service-card__desc">Msaada wa haraka wa kiufundi kwa njia ya mtandao — popote ulipo, tunatatua tatizo bila kusubiri safari.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="6" cy="6" r="2.2" stroke="currentColor" stroke-width="1.6"/><circle cx="18" cy="6" r="2.2" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="18" r="2.2" stroke="currentColor" stroke-width="1.6"/><path d="M8 7.3 11 16m5-8.7L13 16" stroke="currentColor" stroke-width="1.6"/></svg>
+        </div>
+        <h3 class="service-card__title">Network Configurations</h3>
+        <p class="service-card__desc">Usanifu na usanidi wa mitandao ya ofisi na nyumbani — routers, switches, na usalama wa mtandao.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M8 9 4 12l4 3M16 9l4 3-4 3M13 6l-2 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="service-card__title">Software Development</h3>
+        <p class="service-card__desc">Ujenzi wa tovuti, mifumo, na programu za simu zinazoendana na mahitaji halisi ya biashara yako.</p>
+      </article>
+
+      <article class="service-card">
+        <div class="service-card__icon">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 3 3 7.5 12 12l9-4.5L12 3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/><path d="M3 12l9 4.5 9-4.5M3 16.5 12 21l9-4.5" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+        </div>
+        <h3 class="service-card__title">Ushauri wa Kitaalamu wa IT</h3>
+        <p class="service-card__desc">Ushauri kuhusu mikakati ya kidijitali, uchaguzi wa teknolojia sahihi, na jinsi ya kukuza biashara yako kwa IT.</p>
+      </article>
+
+      <article class="service-card service-card--cta">
+        <h3 class="service-card__title">Una wazo lingine?</h3>
+        <p class="service-card__desc">Kila biashara ina mahitaji yake. Tuongee kuhusu tatizo lako, tutakupa suluhisho linalokufaa.</p>
+        <a href="#contact" class="service-card__link">Wasiliana nami →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ PROJECTS ============ -->
+<section class="projects" id="projects">
+  <div class="section-inner">
+    <p class="section-label">Miradi</p>
+    <h2 class="section-title">Vitu nilivyojenga</h2>
+    <p class="section-sub">Miradi halisi inayolenga matatizo ya kila siku ya Watanzania — kutoka usafiri hadi afya na biashara.</p>
+
+    <div class="filters" id="filters">
+      <button class="filter-btn is-active" data-filter="all">Vyote</button>
+      <button class="filter-btn" data-filter="web">Tovuti</button>
+      <button class="filter-btn" data-filter="mobile">Programu za Simu</button>
+      <button class="filter-btn" data-filter="iot">IoT</button>
+    </div>
+
+    <div class="projects__grid" id="projectsGrid">
+
+      <article class="project-card" data-cat="mobile">
+        <div class="project-card__top">
+          <span class="project-card__tag">Mobile App</span>
+        </div>
+        <h3 class="project-card__title">DalaMwanza</h3>
+        <p class="project-card__desc">Programu ya kutafuta njia za daladala jijini Mwanza — inasaidia wasafiri kupata njia sahihi haraka.</p>
+        <div class="project-card__stack">
+          <span>UI/UX</span><span>Maps</span><span>Kiswahili</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" class="project-card__link">GitHub</a>
+          <a href="#" class="project-card__link">Live Demo</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="mobile">
+        <div class="project-card__top">
+          <span class="project-card__tag">Health Tech</span>
+        </div>
+        <h3 class="project-card__title">AfyaConnect</h3>
+        <p class="project-card__desc">Mfumo unaosaidia kupunguza ucheleweshaji wa huduma za afya ya mama kwa kufuatilia "Three Delays Model".</p>
+        <div class="project-card__stack">
+          <span>HTML5</span><span>Dashboard</span><span>Real-time</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" class="project-card__link">GitHub</a>
+          <a href="#" class="project-card__link">Live Demo</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web">
+        <div class="project-card__top">
+          <span class="project-card__tag">Market Data</span>
+        </div>
+        <h3 class="project-card__title">Soko Tracker</h3>
+        <p class="project-card__desc">Mfumo wa kufuatilia bei za mazao sokoni Tanzania, kuwasaidia wakulima na wafanyabiashara kupanga bei.</p>
+        <div class="project-card__stack">
+          <span>JavaScript</span><span>Data Viz</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" class="project-card__link">GitHub</a>
+          <a href="#" class="project-card__link">Live Demo</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web">
+        <div class="project-card__top">
+          <span class="project-card__tag">Client Website</span>
+        </div>
+        <h3 class="project-card__title">TechVision Solutions</h3>
+        <p class="project-card__desc">Tovuti ya kampuni yenye kurasa nyingi na blog — imejengwa kwa HTML5 na CSS3 tu, bila frameworks.</p>
+        <div class="project-card__stack">
+          <span>HTML5</span><span>CSS3</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" class="project-card__link">GitHub</a>
+          <a href="#" class="project-card__link">Live Demo</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="iot">
+        <div class="project-card__top">
+          <span class="project-card__tag">IoT Hardware</span>
+        </div>
+        <h3 class="project-card__title">GesiSmart</h3>
+        <p class="project-card__desc">Mfumo wa kufuatilia kiwango cha gesi kwa kutumia ESP32 na load cell sensors — huwatahadharisha watumiaji mapema.</p>
+        <div class="project-card__stack">
+          <span>ESP32</span><span>Sensors</span><span>IoT</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" class="project-card__link">GitHub</a>
+          <a href="#" class="project-card__link">Live Demo</a>
+        </div>
+      </article>
+
+      <article class="project-card" data-cat="web">
+        <div class="project-card__top">
+          <span class="project-card__tag">Digital Services</span>
+        </div>
+        <h3 class="project-card__title">NexaFlow Portal</h3>
+        <p class="project-card__desc">Jukwaa la huduma za nyaraka za serikali na huduma za kidijitali kwa jamii, chini ya NexaFlow.</p>
+        <div class="project-card__stack">
+          <span>Web App</span><span>Forms</span>
+        </div>
+        <div class="project-card__links">
+          <a href="#" class="project-card__link">GitHub</a>
+          <a href="#" class="project-card__link">Live Demo</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BLOG ============ -->
+<section class="blog" id="blog">
+  <div class="section-inner">
+    <p class="section-label">Blog</p>
+    <h2 class="section-title">Makala na Maandiko</h2>
+    <p class="section-sub">Ninaandika kuhusu teknolojia, AI, na stadi za IT kwa lugha ya Kiswahili — kwa ajili ya jamii ya wasomaji wa Afrika Mashariki.</p>
+
+    <div class="blog__list">
+
+      <article class="blog-post">
+        <span class="blog-post__date">Agosti 2026</span>
+        <h3 class="blog-post__title">Anthropic Watermarking: AI Inayojitambulisha Yenyewe</h3>
+        <p class="blog-post__excerpt">Uchambuzi rahisi kuhusu tangazo jipya la Anthropic la kuweka "alama za maji" kwenye maudhui yanayotengenezwa na AI, na maana yake kwa watumiaji wa kawaida.</p>
+        <a href="#" class="blog-post__link">Soma zaidi →</a>
+      </article>
+
+      <article class="blog-post">
+        <span class="blog-post__date">Julai 2026</span>
+        <h3 class="blog-post__title">Kuelewa IP Addressing na Subnetting kwa Urahisi</h3>
+        <p class="blog-post__excerpt">Mwongozo wa msingi kuhusu Class A/B/C networks, CIDR, na jinsi ya kubadilisha namba za IP kwenda hexadecimal.</p>
+        <a href="#" class="blog-post__link">Soma zaidi →</a>
+      </article>
+
+      <article class="blog-post">
+        <span class="blog-post__date">Juni 2026</span>
+        <h3 class="blog-post__title">Network Switching: Circuit, Datagram na Virtual-Circuit</h3>
+        <p class="blog-post__excerpt">Tofauti kati ya aina tatu kuu za mitandao ya switching, na jinsi zinavyofanya kazi nyuma ya pazia ya intaneti.</p>
+        <a href="#" class="blog-post__link">Soma zaidi →</a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ BOOKS ============ -->
+<section class="books" id="books">
+  <div class="section-inner">
+    <p class="section-label">Vitabu</p>
+    <h2 class="section-title">Machapisho Yangu</h2>
+    <p class="section-sub">Nimeandika vitabu vinavyolenga kusaidia wanafunzi na jamii kuelewa dunia ya teknolojia kwa lugha rahisi.</p>
+
+    <div class="books__grid">
+
+      <article class="book-card">
+        <div class="book-card__cover">
+          <span class="book-card__series">The African Tech Series — Kitabu cha 1</span>
+          <span class="book-card__cover-title">Plug In</span>
+        </div>
+        <div class="book-card__body">
+          <h3 class="book-card__title">Plug In</h3>
+          <p class="book-card__desc">Mwongozo wa kwanza wa mfululizo wa vitabu vinne — unaowasaidia wanafunzi wa IT Afrika kuanza safari yao ya kazi kwa ujasiri.</p>
+          <a href="#" class="btn btn--small">Pata Kitabu</a>
+        </div>
+      </article>
+
+      <article class="book-card">
+        <div class="book-card__cover book-card__cover--alt">
+          <span class="book-card__series">Ijayo — 2026</span>
+          <span class="book-card__cover-title">Build &amp; Ship</span>
+        </div>
+        <div class="book-card__body">
+          <h3 class="book-card__title">Build &amp; Ship <span class="badge">Inakuja Hivi Karibuni</span></h3>
+          <p class="book-card__desc">Kitabu cha pili cha mfululizo — kuhusu jinsi ya kujenga na kuzindua bidhaa za kidijitali kutoka mwanzo hadi mwisho.</p>
+          <a href="#" class="btn btn--small btn--disabled">Soma Zaidi</a>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="contact" id="contact">
+  <div class="section-inner contact__inner">
+    <div class="contact__info">
+      <p class="section-label">Wasiliana</p>
+      <h2 class="section-title">Tuongee kuhusu mradi wako</h2>
+      <p class="section-sub">Niko tayari kukusaidia — kwenye mradi wa software, tatizo la mtandao, au tu kuulizia ushauri wa IT.</p>
+
+      <div class="contact__details">
+        <a href="tel:+255700000000" class="contact__item">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 3h3l2 5-2.5 1.5a11 11 0 0 0 5 5L15 12l5 2v3a2 2 0 0 1-2 2C10.5 19 5 13.5 5 6a2 2 0 0 1 1-3Z" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"/></svg>
+          +255 700 000 000
+        </a>
+        <a href="mailto:faraja@nexaflow.co.tz" class="contact__item">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="5" width="18" height="14" rx="2" stroke="currentColor" stroke-width="1.6"/><path d="m4 7 8 6 8-6" stroke="currentColor" stroke-width="1.6"/></svg>
+          faraja@nexaflow.co.tz
+        </a>
+      </div>
+
+      <div class="contact__socials">
+        <a href="#" class="social-icon" aria-label="WhatsApp" title="WhatsApp">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.1 8.1 0 0 1-4.1-1.1l-.3-.2-3.1.8.8-3-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1s-.7.8-.8 1c-.2.2-.3.2-.5.1a6.6 6.6 0 0 1-2-1.2 7.4 7.4 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5l.4-.4.2-.4c.1-.1 0-.3 0-.4l-.7-1.7c-.2-.4-.4-.4-.6-.4h-.5c-.2 0-.5.1-.7.3a2.7 2.7 0 0 0-.9 2c0 1.2.9 2.3 1 2.5.1.2 1.8 2.8 4.4 3.8.6.3 1.1.4 1.5.6.6.2 1.2.1 1.6.1.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.2-.3-.2-.5-.3Z"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="Instagram" title="Instagram">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="5" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="GitHub" title="GitHub">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.2 19.5c.5.1.7-.2.7-.5v-1.7c-2.8.6-3.4-1.3-3.4-1.3-.4-1.1-1-1.4-1-1.4-.9-.6.1-.6.1-.6 1 .1 1.5 1 1.5 1 .9 1.5 2.3 1.1 2.9.8.1-.7.4-1.1.6-1.4-2.2-.3-4.6-1.1-4.6-4.9 0-1.1.4-2 1-2.6-.1-.3-.4-1.3.1-2.6 0 0 .8-.3 2.7 1a9.4 9.4 0 0 1 5 0c1.9-1.3 2.7-1 2.7-1 .5 1.3.2 2.3.1 2.6.6.6 1 1.5 1 2.6 0 3.8-2.4 4.6-4.6 4.9.4.3.7 1 .7 2v3c0 .3.2.6.7.5A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+        <a href="#" class="social-icon" aria-label="LinkedIn" title="LinkedIn">
+          <svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2 2 0 1 1 0 4 2 2 0 0 1 0-4ZM3 9h4v12H3V9Zm7 0h3.8v1.6h.05c.5-.9 1.8-1.9 3.7-1.9 4 0 4.7 2.5 4.7 5.8V21h-4v-5.4c0-1.3 0-3-1.9-3s-2.2 1.4-2.2 2.9V21h-4V9Z"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <form class="contact__form" id="contactForm">
+      <div class="form-group">
+        <label for="name">Jina lako</label>
+        <input type="text" id="name" name="name" placeholder="Andika jina lako" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Barua pepe</label>
+        <input type="email" id="email" name="email" placeholder="jina@mfano.com" required>
+      </div>
+      <div class="form-group">
+        <label for="subject">Mada</label>
+        <input type="text" id="subject" name="subject" placeholder="Kuhusu mradi wako...">
+      </div>
+      <div class="form-group">
+        <label for="message">Ujumbe</label>
+        <textarea id="message" name="message" rows="5" placeholder="Niambie kuhusu mradi wako au tatizo lako..." required></textarea>
+      </div>
+      <button type="submit" class="btn btn--primary btn--full">Tuma Ujumbe</button>
+      <p class="form-status" id="formStatus" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="footer">
+  <div class="section-inner footer__inner">
+    <p>© <span id="year"></span> Faraja Mbeti · NexaFlow Digital Services. Imejengwa kwa mikono, na moyo, Tanzania.</p>
+    <a href="#home" class="footer__back">Rudi Juu ↑</a>
+  </div>
+</footer>
+
+<button class="back-to-top" id="backToTop" aria-label="Rudi juu">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
